@@ -5,7 +5,9 @@ const App = () => {
     <>
       <section className="a-wrapper">
         <div className="innerWidth a-container">
-          <div className="top-cover"></div>
+          <div className="top-cover">
+            <div className="filler"></div>
+          </div>
           <div className="paddings  bottom-cover">
             <div className="portfolio">
               {data.map((item, idx) => {

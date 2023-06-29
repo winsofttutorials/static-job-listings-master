@@ -98,6 +98,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--Desaturated-Dark-Cyan);
+  position: relative;
+}
+
+.filler {
+  width: 100%;
+  max-width: 900px;
+  height: 70px;
+  background-color: var(--White);
+  padding: 8px;
+  left: 50%;
+  bottom: -70px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-shadow: 0 20px 25px -30px rgba(0, 0, 0, 0.4);
 }
 
 .bottom-cover {
@@ -124,10 +138,9 @@
 
 .p-wrapper {
   background-color: var(--White);
-
   box-shadow: 0 20px 25px -30px rgba(0, 0, 0, 0.4);
   max-width: 900px;
-  margin: 0 auto 20px;
+  margin: 20px auto 20px;
 }
 .p-wrapper > div {
   flex: 1;
