@@ -12,7 +12,11 @@ const App = () => {
             <div className="portfolio">
               {data.map((item, idx) => {
                 return (
-                  <div className="paddings  flexCol p-wrapper" key={idx}>
+                  <form
+                    onSubmit={() => {}}
+                    className="paddings  flexCol p-wrapper"
+                    key={idx}
+                  >
                     <div className="flexCol left-side">
                       <img src={item.logo} alt={item.company} width={70} />
                       <div className="company-profile">
@@ -70,7 +74,7 @@ const App = () => {
                         </button>
                       ))}
                     </div>
-                  </div>
+                  </form>
                 );
               })}
             </div>
