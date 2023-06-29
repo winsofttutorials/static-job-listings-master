@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+  /* (Background) */
+  --Light-Grayish-Cyan: hsl(180, 52%, 96%);
+
+  /* (Filter Tablets) */
+  --Light-Grayish-Cyan2: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --White: hsl(255, 0%, 100%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+
+.primaryText {
+  font-size: 15px;
+  color: var(--Desaturated-Dark-Cyan);
+  font-weight: 700;
+}
+
+.secondaryText {
+  font-size: 12px;
+  color: var(--Light-Grayish-Cyan);
+  margin-right: 5px;
+}
+
+.titleText {
+  color: var(--Very-Dark-Grayish-Cyan);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px 0;
+  display: block;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.titleText:hover {
+  color: var(--Desaturated-Dark-Cyan);
+}
+
+.a-container {
+  min-height: 100vh;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.paddings {
+  padding: 2.5rem;
+}
+
+.button {
+  background-color: var(--Light-Grayish-Cyan2);
+  border: 0;
+  outline: none;
+  padding: 8px;
+  margin-left: 10px;
+  color: var(--Desaturated-Dark-Cyan);
+  font-size: 15px;
+  border-radius: 5px;
+  font: 500;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.button:hover {
+  background-color: var(--Desaturated-Dark-Cyan);
+  color: var(--Light-Grayish-Cyan);
+}
+.new {
+  padding: 5px;
+  color: var(--White);
+  background-color: var(--Desaturated-Dark-Cyan);
+  border-radius: 15px;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.featured {
+  padding: 5px;
+  color: var(--White);
+  background-color: var(--Very-Dark-Grayish-Cyan);
+  border-radius: 15px;
+  font-size: 12px;
+}
+.top-cover {
+  height: 20vh;
+  background-image: url("./components/images/bg-header-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--Desaturated-Dark-Cyan);
+}
+
+.bottom-cover {
+  height: 100%;
+  background-color: var(--Light-Grayish-Cyan);
+}
+
+.flexCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flexColSpace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexColEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.p-wrapper {
+  background-color: var(--White);
+
+  box-shadow: 0 20px 25px -30px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+.p-wrapper > div {
+  flex: 1;
+}
+
+.left-side img {
+  margin-right: 20px;
+}
+
+.company-profile:nth-child(2) > :nth-child(3) {
+  font-size: 14px;
+  color: var(--Dark-Grayish-Cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1536px) {
+  .innerWidth {
+    width: 1260px;
+    margin: auto;
+  }
+}
